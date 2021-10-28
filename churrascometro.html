@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+
+<style>
+
+body{
+    background-color: black;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 300px;
+    margin: auto;
+    background-color: #7183de;
+    padding: 10px;
+    height: 310px;
+    border-radius: 10px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+h1{
+    margin-left: 23px;
+}
+
+button{
+    margin-top: 5px;
+    padding: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #b0b0b0;
+}
+
+#resultado{
+    color: black;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+</style>
+
+
+</head>
+
+<body>
+    
+<div class="container">
+
+<h1>Churrascômetro</h1>
+
+<input type="number" name="adultos" placeholder="Adultos" id="adultos">
+<input type="number" name="criancas" placeholder="Crianças" id="criancas">
+<input type="number" name="duracao" placeholder="Duração (h)" id="duracao">
+
+<button onclick="console.log(calcular())">Calcular</button>
+
+<div id="resultado">
+</div>
+
+</div>
+
+<script src="churras.js"></script>
+
+</body>
+
+</html>
